@@ -242,10 +242,6 @@ def parse_args():
     return parser.parse_args()
 
 
-try_algo(256, SetAssociativeCache(64, 3 * 1024,
-                                  displacement_strategy=oldest_displacement, sets_amount=3, ), 'lol')
-
-
 def main():
     options = parse_args()
     choice = [
